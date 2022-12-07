@@ -1,20 +1,24 @@
 {
-  "name": "y",
+  "name": "bookind_server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "build": "cd client && yarn && yarn build",
-    "start": "cd api && node index.js"
+    "start": "node index.js",
+    "build": "yarn"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mukhammed3/booking-server.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mukhammed3/booking-server/issues"
-  },
-  "homepage": "https://github.com/mukhammed3/booking-server#readme"
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.7.2",
+    "nodemon": "^2.0.20"
+  }
 }
