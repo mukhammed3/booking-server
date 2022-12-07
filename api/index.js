@@ -10,7 +10,7 @@ import usersRoute from "./routes/users.js";
 import hotelRoute from "./routes/hotels.js";
 import roomsRoute from "./routes/rooms.js";
 const app = express();
-dotenv.config();
+dotenv.config("../.env");
 
 const connect = async () => {
   try {
