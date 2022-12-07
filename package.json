@@ -1,0 +1,20 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd client && yarn && yarn build",
+    "start": "cd api && node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mukhammed3/booking-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mukhammed3/booking-server/issues"
+  },
+  "homepage": "https://github.com/mukhammed3/booking-server#readme"
+}
