@@ -9,6 +9,10 @@ import authRoute from "./routes/auth.js";
 import usersRoute from "./routes/users.js";
 import hotelRoute from "./routes/hotels.js";
 import roomsRoute from "./routes/rooms.js";
+import corsOptions from "./config/corsOptions.js";
+
+app.use(cors(corsOptions));
+
 const app = express();
 dotenv.config("../.env");
 
@@ -27,7 +31,7 @@ mongoose.connection.on("disconnected", () => {
 });
 
 //*middles
-app.use(cors());
+// app.use(cors());
 app.use(cookieParser());
 
 // активируем отправления для локалазоста
